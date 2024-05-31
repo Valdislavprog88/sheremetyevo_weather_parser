@@ -8,7 +8,7 @@ import logging
 app = FastAPI(
     title="Weather parser",
     root_path='',
-    version="1.0",
+    version="0.0.1",
     docs_url=None,
     openapi_url=None,
     redoc_url=None
