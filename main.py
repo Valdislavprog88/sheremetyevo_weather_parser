@@ -46,7 +46,6 @@ async def get_weather():
 @app.get("/weather_api/temperature")
 async def get_temperature() -> dict[str, str]:
     fetcher = await fetch_and_parse_data()
-    print(1/0)
     return {"temperature": fetcher.get_temperature()}
 
 @app.get("/weather_api/temp_status")
