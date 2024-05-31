@@ -13,4 +13,5 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
       - name: Run unit tests
-        run: python -m unittest tests/test_main.py    
+        run: python -m unittest discover tests
+    
