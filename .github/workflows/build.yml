@@ -2,9 +2,9 @@ name: Build
 on: push
 jobs:
   build:
+    needs: check
     runs-on: ubuntu-latest
     steps:
-      - uses: check
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       
