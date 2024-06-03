@@ -5,6 +5,8 @@
 ### Клонирование Репозитория
 
 ```git clone https://github.com/Valdislavprog88/sheremetyevo_weather_parser.git```
+
+
 ```cd sheremetyevo_weather_parser```
 
 
@@ -20,7 +22,7 @@
 ### Установите зависимости из requirements.txt
 ```pip install -r requirements.txt```
 
-### Запуск Сервера UVicorn
+### Запуск Сервера Uvicorn
 ```uvicorn main:app --host 0.0.0.0 --port 8000 # порт и хост поменяй на свои```
 
 ## Способ через Docker
