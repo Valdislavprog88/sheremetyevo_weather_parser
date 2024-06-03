@@ -103,7 +103,8 @@ if __name__ == "__main__":
 
     weather_fetcher = WeatherDataFetcher(url)
 
-    asyncio.run(weather_fetcher.fetch_data())
+    loop = asyncio.get_event_loop()
+    result = loop.run_until_complete(weather_fetcher.fetch_data())
     weather_fetcher.parse_data()
 
     temperature = weather_fetcher.get_temperature()

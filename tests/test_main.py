@@ -7,7 +7,8 @@ class WeatherDataFetcherTestCase(unittest.TestCase):
     def setUp(self):
         warnings.simplefilter('ignore', category=ResourceWarning)
         self.weather_fetcher = WeatherDataFetcher('https://sheremetyevo.aeroport.website/pogoda')
-        asyncio.run(self.weather_fetcher.fetch_data())
+        loop = asyncio.get_event_loop()
+        result = loop.run_until_complete(self.weather_fetcher.fetch_data())
         self.weather_fetcher.parse_data()
     
     def check_result_type(self, result, expected_type):
