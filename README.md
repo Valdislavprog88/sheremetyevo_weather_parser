@@ -31,7 +31,7 @@ Docker должен быть уже установлен! [Ссылка на у�
 
 ## Скачивание и запуск
 ### Скачайте образ с DockerHub:
-```sudo docker pull dockerhub.timeweb.cloud/evmexaprog88 weather_parser```
+```sudo docker pull dockerhub.timeweb.cloud/evmexaprog88/weather_parser```
 
 ### Создайте docker-volume для хранения данных из контейнера
 ```sudo docker volume create --name weather_volume```
