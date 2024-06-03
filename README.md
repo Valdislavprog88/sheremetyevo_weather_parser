@@ -31,7 +31,7 @@ Docker должен быть уже установлен! [Ссылка на у�
 
 ## Скачивание и запуск
 ### Скачайте образ с DockerHub:
-```sudo docker pull dockerhub.timeweb.cloud/evmexaprog88/weather_parser```
+```sudo docker pull evmexaprog88/weather_parser```
 
 ### Создайте docker-volume для хранения данных из контейнера
 ```sudo docker volume create --name weather_volume```
@@ -40,5 +40,5 @@ Docker должен быть уже установлен! [Ссылка на у�
 Вместо 8080 поставьте тот, порт, на котором будет работать сервис!
 
 
-```sudo docker run -p 8000:8080 -d --mount source=weather_volume,target=/app dockerhub.timeweb.cloud/evmexaprog88/weather_parser```
+```sudo docker run -p 8000:8080 -d --mount source=weather_volume,target=/app evmexaprog88/weather_parser```
 
