@@ -30,7 +30,7 @@
 Docker должен быть уже установлен! [Ссылка на установку](https://docs.docker.com/engine/install/)
 
 ## Скачивание и запуск
-### Скачайте образ с dockerhub:
+### Скачайте образ с DockerHub:
 ```sudo docker pull dockerhub.timeweb.cloud/evmexaprog88 weather_parser```
 
 ### Создайте docker-volume для хранения данных из контейнера
