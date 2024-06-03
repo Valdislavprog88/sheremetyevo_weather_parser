@@ -1,7 +1,7 @@
 # Sheremetyevo Weather Parser 🌤️
 
 
-#### Обычный способ
+## Обычный способ
 ### Клонирование Репозитория
 
 ```git clone https://github.com/Valdislavprog88/sheremetyevo_weather_parser.git```
