@@ -36,5 +36,7 @@ Docker должен быть уже установлен! Ссылка на ус
 
 ### Запустите проект
 Вместо 8080 поставьте тот, порт, на котором будет работать сервис!
+
+
 ```sudo docker run -p 8000:8080 -d --mount source=weather_volume,target=/app dockerhub.timeweb.cloud/evmexaprog88/weather_parser```
 
