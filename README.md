@@ -27,7 +27,7 @@
 
 # Способ через Docker
 ### Установка
-Docker должен быть уже установлен! Ссылка на установку: https://docs.docker.com/engine/install/
+Docker должен быть уже установлен! [Ссылка на установку](https://docs.docker.com/engine/install/)
 
 ## Скачивание и запуск
 ### Скачайте образ с dockerhub:
