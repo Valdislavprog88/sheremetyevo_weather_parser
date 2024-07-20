@@ -62,3 +62,6 @@ async def get_wind() -> dict[str, str]:
 async def get_air_pressure() -> dict[str, str]:
     fetcher = await fetch_and_parse_data()
     return {"air_pressure": fetcher.get_air_pressure()}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
