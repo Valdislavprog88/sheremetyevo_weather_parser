@@ -9,9 +9,9 @@ app = FastAPI(
     title="Weather parser",
     root_path='',
     version="0.0.1",
-    docs_url=None,
-    openapi_url=None,
-    redoc_url=None
+    # docs_url=None,
+    # openapi_url=None,
+    # redoc_url=None
 )
 
 
