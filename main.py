@@ -27,6 +27,7 @@ async def fetch_and_parse_data():
     weather_fetcher.parse_data()
     return weather_fetcher
 
+
 @app.get("/weather_api/")
 async def get_weather():
     fetcher = await fetch_and_parse_data()
@@ -34,12 +35,12 @@ async def get_weather():
     temperature = fetcher.get_temperature()
     temp_status = fetcher.get_temperature_status()
     wind = fetcher.get_wind()
-    air_pressure = fetcher.get_air_pressure()
+    # air_pressure = fetcher.get_air_pressure()
     return {
         "temperature": temperature,
         "temp_status": temp_status,
         "wind": wind,
-        "air_pressure": air_pressure,
+        # "air_pressure": air_pressure,
     }
 
 
@@ -48,20 +49,22 @@ async def get_temperature() -> dict[str, str]:
     fetcher = await fetch_and_parse_data()
     return {"temperature": fetcher.get_temperature()}
 
+
 @app.get("/weather_api/temp_status")
 async def get_temp_status() -> dict[str, str]:
     fetcher = await fetch_and_parse_data()
     return {"temp_status": fetcher.get_temperature_status()}
+
 
 @app.get("/weather_api/wind")
 async def get_wind() -> dict[str, str]:
     fetcher = await fetch_and_parse_data()
     return {"wind": fetcher.get_wind()}
 
-@app.get("/weather_api/air_pressure")
-async def get_air_pressure() -> dict[str, str]:
-    fetcher = await fetch_and_parse_data()
-    return {"air_pressure": fetcher.get_air_pressure()}
+# @app.get("/weather_api/air_pressure")
+# async def get_air_pressure() -> dict[str, str]:
+#     fetcher = await fetch_and_parse_data()
+#     return {"air_pressure": fetcher.get_air_pressure()}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
